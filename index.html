@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .wrapper{
+            position: relative;
+            text-align: center;
+        }
+
+        .refresh-btn {
+            text-decoration: none;
+            background-color: black;
+            padding: 10px 16px 6px;
+            border-radius: 5px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h3>로또번호 생성기</h3>
+        <h1 class="lotto_result"></h1>
+        <div class="refresh-btn">새로고침</div>
+        <script type="module" src="randomNum.js"></script>
+        <p>터미널에 "npx http-server" 입력해서 실행하기!</p>
+    </div>
+</body>
+</html>
